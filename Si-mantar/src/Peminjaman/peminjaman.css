@@ -1,0 +1,183 @@
+/* peminjaman.css */
+
+.form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .seah{
+    position: relative;
+    width: 250px;
+    top: 10px;
+    margin: 0 10px;
+  }
+  
+  .seah label {
+    position: relative;
+    width: 100%;
+  }
+  
+  .seah label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--black2);
+  }
+  
+
+  
+
+
+  input[type="text"],
+  input[type="datetime-local"],
+  textarea,
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  table th {
+    background-color: #f2f2f2;
+  }
+
+  table th:first-child,
+  table td:first-child {
+    border-left: none;
+  }
+
+  table th:last-child,
+  table td:last-child {
+    border-right: none;
+  }
+
+  .form-text label {
+    margin-bottom: 5px;
+    max-height: 100px;
+  }
+
+  /* Untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Untuk sel header */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Untuk baris ganjil */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Untuk baris saat dihover */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Pengguliran horizontal jika tabel terlalu lebar */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Pengaturan lebar kolom */
+th, td {
+    width: auto; /* Menggunakan lebar otomatis */
+    max-width: 200px; /* Maksimum lebar kolom */
+}
+
+/* Gaya tombol "Scan QR Code" */
+.scan-button {
+  background-color: #4CAF50; /* Hijau */
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px; /* Jarak antara tombol dengan tombol sebelumnya */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Gaya container scanner QR code */
+.qr-scanner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Pastikan scanner tampil di atas konten lain */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya tombol untuk menutup scanner QR code */
+.close-scanner {
+  background-color: #f44336; /* Merah */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px; /* Jarak antara scanner dengan tombol tutup */
+}
+
+
+/* Media queries untuk menyesuaikan gaya CSS berdasarkan ukuran layar perangkat */
+@media screen and (max-width: 600px) {
+    /* Penyesuaian gaya CSS untuk perangkat dengan lebar layar maksimum 600px */
+    th, td {
+        font-size: 12px; /* Mengurangi ukuran font */
+    }
+}
